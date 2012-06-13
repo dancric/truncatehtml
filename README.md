@@ -1,3 +1,14 @@
+Trauncate HTML without Word Cutoff
+=================================
+
+This Jekyll plugin is an updated version of truncatehtml by Matt Hall.  That version cuts off characters based on the length supplied by truncatehtml (thus, truncatehtml | 500 will return exactly 500 characters of text with the HTML intact).
+
+This version of truncatehtml will not cut off a word in mid-stream, but rather includes the remainder of the current paragraph in which the cutoff was detected.  Simply, this version will return a *minimum* of 500 characters for truncate | 500, ensuring that blog post summaries are nice and human readable.
+
+
+Original Readme
+===============
+
 ## Requirements
 
 The truncator requires [Nokogiri][4] to parse out the HTML string.
